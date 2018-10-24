@@ -1,13 +1,6 @@
 steps:
-- id: "Prepare staging directory"
-  name: 'ubuntu'
-  args: ['mkdir', 'deploy-build']
-  dir: 'Front-End-AppEngine'
-- name: 'ubuntu'
-  args: ['cp', 'app.yaml', 'deploy-build/']
-  dir: 'Front-End-AppEngine'
 - id: "Deploy to AppEngine"
   name: 'gcr.io/cloud-builders/gcloud'
-  args: ['app', 'deploy','deploy-build']
+  args: ['app', 'deploy']
   dir: 'Front-End-AppEngine'
 timeout: '1600s'
