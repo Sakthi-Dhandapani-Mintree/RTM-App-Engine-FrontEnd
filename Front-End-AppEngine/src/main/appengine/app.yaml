@@ -1,2 +1,4 @@
 runtime: java
-env: flex
+api_version: 1
+service: frontend
+threadsafe: true
