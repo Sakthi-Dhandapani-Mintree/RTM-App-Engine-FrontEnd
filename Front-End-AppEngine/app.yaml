@@ -1,6 +1,6 @@
 runtime: java8
 api_version: 1
-service: frontend
+service: front
 threadsafe: true
 
 handlers:
