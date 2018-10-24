@@ -1,8 +1,6 @@
 runtime: nodejs8
 api_version: 1
-service: front
-threadsafe: true
-
+service: frontendservice
 handlers:
 - url: /
   static_files: www/index.html
