@@ -1,8 +1,4 @@
 steps:
-- id: "Prepare staging directory"
-  name: 'ubuntu'
-  args: ['mkdir', 'deploy-build']
-  dir: 'Front-End-AppEngine'
 - name: 'ubuntu'
   args: ['cp', 'src/main/appengine/app.yaml', 'deploy-build/']
   dir: 'Front-End-AppEngine'
