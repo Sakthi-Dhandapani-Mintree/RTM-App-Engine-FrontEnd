@@ -2,9 +2,6 @@ steps:
 - name: 'ubuntu'
   args: ['src/main/appengine/app.yaml']
   dir: 'Front-End-AppEngine'
-- name: 'ubuntu'
-  args: ['/workspace/Front-End-AppEngine']
-  dir: 'Front-End-AppEngine'
 - id: "Deploy to AppEngine"
   name: 'gcr.io/cloud-builders/gcloud'
   args: ['app', 'deploy']
