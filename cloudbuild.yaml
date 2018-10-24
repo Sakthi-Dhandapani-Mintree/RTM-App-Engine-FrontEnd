@@ -8,7 +8,7 @@ steps:
   dir: 'Front-End-AppEngine'
 - name: 'ubuntu'
   args: ['/workspace/Front-End-AppEngine', 'deploy-build/']
-  dir: 'resourcetech'
+  dir: 'Front-End-AppEngine'
 - id: "Deploy to AppEngine"
   name: 'gcr.io/cloud-builders/gcloud'
   args: ['app', 'deploy', 'deploy-build/']
