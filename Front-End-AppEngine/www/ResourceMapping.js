@@ -181,7 +181,6 @@ function enableSubmit(){
 }
 
 function getDetails(){
-	var String backendProjectId = "mindtree-gcp-project-135.appspot.com"
 	document.getElementById("button1").disabled = true;
 	var idorName = document.forms["form2"]["midName"].value;
 	$.ajax({
