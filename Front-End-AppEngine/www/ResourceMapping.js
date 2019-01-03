@@ -15,7 +15,7 @@ function validateForm() {
 		$.ajax({
 			type : "POST",
 			contentType : 'application/json; charset=utf-8',
-			url : "https://backend-dot-mindtree-gcp-practice.appspot.com"+"/addResource",
+			url : "https://backend-dot-mindtree-gcp-m1048135.appspot.com"+"/addResource",
 			data : JSON.stringify(resource),
 			dataType : 'json',
 			success : function(result) {
@@ -185,7 +185,7 @@ function getDetails(){
 	var idorName = document.forms["form2"]["midName"].value;
 	$.ajax({
 		type : "GET",
-		url :   "https://backend-dot-mindtree-gcp-practice.appspot.com"+"/getResource/"+idorName,
+		url :   "https://backend-dot-mindtree-gcp-m1048135.appspot.com"+"/getResource/"+idorName,
 		 dataType: 'json',
 		success : function(result) {
 			if(isNullOrEmpty(result)){
